@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Boardscore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1> Scoreboard</h1>
+    <p>Basketball .livescore</p>
+    </header>
+    <div class="scoreboard" id="board">
+        <div class="team">
+            <span class="team-name">Home</span>
+            <div class="score-display">
+                <span class="score" id="home-score">0</span>
+
+            </div>
+            <div class="lead-dot" id="home-lead"></div>
+            <div class="btn-group">
+                <button class="btn" onclick="addscore('home',1)">+1</button>
+                <button class="btn" onclick="addscore('home',2)">+2</button>
+                <button class="btn" onclick="addscore('home',3)">+3</button>
+
+        </div>
+    </div>
+    <div class="divider"></div>
+
+     <div class="team">
+            <span class="team-name">Guest</span>
+            <div class="score-display">
+                <span class="score" id="guest-score">0</span>
+
+            </div>
+            <div class="lead-dot" id="guest-lead"></div>
+            <div class="btn-group">
+                <button class="btn" onclick="addscore('guest',1)">+1</button>
+                <button class="btn" onclick="addscore('guest',2)">+2</button>
+                <button class="btn" onclick="addscore('guest',3)">+3</button>
+
+        </div>
+    </div>
+    <div class="reset-wrap">
+        <button class="btn-reset" onclick="resetScore()">&nbsp; New Game</button>
+    </div>
+    <script src="index.js"\></script>
+</body>
+</html>
